@@ -1,9 +1,9 @@
-import struct
+# import struct
 
 import tkinter as tk
-from base64 import encode
+# from base64 import encode
 from tkinter import filedialog
-import os
+# import os
 
 root = tk.Tk()
 root.withdraw()
