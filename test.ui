@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>310</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>校正数据并合并</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>160</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择基准文件1</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>100</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>140</y>
+     <width>160</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择待校正通道基准文件</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>250</y>
+     <width>160</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择基准他通道实际数据</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>370</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>80</y>
+     <width>100</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>生成校正系数</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>330</y>
+     <width>160</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择待校正通道数据</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>290</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>150</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_6">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>380</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>selectfile1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>149</x>
+     <y>73</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>256</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>selectfile2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>161</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>27</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>selectfile3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>157</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>438</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>selectfile4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>171</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>467</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>dataanalyse()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>501</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>45</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>datareform()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>326</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>244</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <signal>button1_click()</signal>
+  <signal>button2_click()</signal>
+  <signal>button3_click()</signal>
+  <signal>button4_click()</signal>
+  <signal>button5_click()</signal>
+  <signal>button6_click()</signal>
+  <slot>selectfile1()</slot>
+  <slot>selectfile2()</slot>
+  <slot>selectfile3()</slot>
+  <slot>selectfile4()</slot>
+  <slot>dataanalyse()</slot>
+  <slot>datareform()</slot>
+ </slots>
+</ui>
