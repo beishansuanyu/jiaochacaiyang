@@ -11,13 +11,17 @@ def filecombin(f_path1, f_path2):
 
     f2 = open(f_path2, 'r')
 
-    f3 = open("合并后数据.txt", 'w+')
+    f3 = open("E:\\多通道交叉采样技术\\matlab_c\\合并后数据.txt", 'w+')
     m1 = f1.readline()
+
     m2 = f2.readline()
+
     while (m1 != '' and m2 != ''):
-        f3.write(m1)
-        f3.write(m2)
+        f3.write(str(m1))
+        f3.write(str(m2))
         m1 = f1.readline()
+
+
         m2 = f2.readline()
 
     f1.close()
